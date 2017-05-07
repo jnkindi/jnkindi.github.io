@@ -623,28 +623,7 @@
             $(function () {
                 $('form').on('submit', function (e) {
                     e.preventDefault();
-                    var name = $("#name").val();
-                    var email = $("#email").val();
-                    var message = $("#message").val();
-                    $.ajax({
-                        url : "https://rwandatech24.com/jnkindi.github.io/send_mail.php",
-                        type : "GET",
-                        cache : false,
-                        data : {
-                            name : name,
-                            email : email,
-                            message : message,
-                        },
-                        success : function (html, textStatus){
-                            $("#mc-notification").css("display", "block");
-                            $("#name").val("");
-                            $("#email").val("");
-                            $("#message").val("");
-                        },
-                        error : function(xhr, errorThrown, textStatus){
-                            console.log("An Error");
-                        }
-                    });
+                    alert("Please Contact Me,Through my e-mail at jacknyilinkindi@gmail.com.This doesn't work for now!");
                 });
             });
         </script>
